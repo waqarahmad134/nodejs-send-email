@@ -13,11 +13,12 @@ $ npm install
 $ node index.js
 ```
 
-* Change your admin email account in the file: **.env** if .env is not available then first create and use these Variables
-EMAIL_HOST
-EMAIL_USERNAME
-EMAIL_PASSWORD
-EMAIL_PORT
+"Update your administrator email account by modifying the '.env' file. If the '.env' file doesn't exist, create it and set the required variables." <br>
+
+EMAIL_HOST <br>
+EMAIL_USERNAME<br>
+EMAIL_PASSWORD<br>
+EMAIL_PORT<br>
 
 "In this repository, I have also included a Vercel configuration. If you want to deploy your project on Vercel and run this API without any hosting costs, simply fork this repository and use your Vercel account. By selecting this repository in Vercel, your Node.js project will be live on Vercel, and you can manage the API from there. For example, if you forget to access the API at https://nodejs-send-email.vercel.co, your API endpoint will be https://nodejs-send-email.vercel.co/sendmail."
 

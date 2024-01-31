@@ -4,6 +4,9 @@ const nodemailer = require('nodemailer');
 const cors = require('cors');
 const app = express();
 const PORT = 6786;
+const path = require('path');
+app.use(express.static(path.join(__dirname, 'public')));
+
 
 app.use(cors());
 app.use(express.json());
@@ -18,6 +21,10 @@ const transporter = nodemailer.createTransport({
   },
 });
 
+
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
 
 app.post('/sendmail', (req, res) => {
   const { name ,email , phone , subject ,message } = req.body;

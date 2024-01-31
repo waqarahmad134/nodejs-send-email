@@ -2,7 +2,7 @@
 
 ## Requirements
 
-* Nodejs 8.10.x
+* Nodejs 16/18
 
 Clone project and run test.
 
